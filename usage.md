@@ -6,9 +6,10 @@ This guide explains how product teams can use the Tone Consistency System.
 
 ## Who This Is For
 
+- Content Designers maintaining Voice Consistency 
 - Product Designers writing UI copy  
-- Product Managers defining product flows  
-- Content Designers maintaining voice consistency  
+- Product Managers defining Product Flows  
+
 
 ---
 
