@@ -1,48 +1,7 @@
 # AI Tone Consistency System  
-### Content infrastructure for scaling consistent product voice across UX
+### Scaling consistent product voice across distributed teams using AI
 
-An AI-powered system to evaluate and improve tone consistency in product UI copy at scale.
-
----
-
-## Overview
-
-In fast-moving product teams, UI copy is often written by multiple contributors: _Product Managers, Designers, and Engineers_. While this enables speed, it also leads to inconsistencies in tone, clarity, and user experience.
-
-This project explores how a **scalable content system + AI layer** can help teams maintain a consistent voice without relying on centralized content review.
-
----
-
-## Problem
-
-As teams scale:
-
-- UI copy is written independently across squads  
-- Tone varies across features (formal vs casual, verbose vs concise)  
-- Content reviews become a bottleneck  
-- Users experience inconsistency across journeys  
-
-Example:
-
-- “Your booking has not been confirmed”  
-- “Oops! Something went wrong 😅”  
-
-These inconsistencies reduce trust and product coherence.
-
----
-
-## Solution
-
-This system combines:
-
-1. **A structured tone framework**  
-2. **A reusable evaluation model**  
-3. **An AI-powered tone checker**
-
-Together, they enable teams to:
-- self-evaluate content  
-- improve clarity and consistency  
-- reduce dependency on content specialists  
+_(An AI-powered system to evaluate and improve tone consistency in product UI copy at scale.)_
 
 ---
 
@@ -55,20 +14,84 @@ Together, they enable teams to:
 
 ---
 
-## Tone Framework
+## Overview
 
-The system is based on four core principles:
+In fast-moving product teams, UI copy is often written by multiple contributors: _Product Managers, Designers, and Engineers_. While this enables speed, it also leads to inconsistencies in tone, clarity, and user experience.
 
-- **Clear** → Easy to understand, no jargon  
-- **Reassuring** → Reduces user anxiety  
-- **Concise** → Avoids unnecessary words  
-- **Human** → Conversational but not overly casual  
-
-Each principle is applied consistently across all product surfaces.
+This project explores how a **scalable content system + AI layer** can help teams maintain a consistent voice without relying on centralized content review.
 
 ---
 
-## How the AI System Works
+## Problem Statement
+
+In a multi-team product environment:
+
+- Product managers and Designers write UI copy independently 
+- Tone varies across features (formal vs casual, verbose vs concise)  
+- Content reviews become a bottleneck  
+- Users experience inconsistency across journeys  
+
+Example:
+
+- “Your booking has not been confirmed”  
+- “Oops! Something went wrong, your booking failed”  
+
+These inconsistencies reduce user trust and product coherence.
+
+---
+
+## Objective
+
+Design a scalable system that:
+
+- Defines a clear tone framework
+- Enables teams to self-evaluate content
+- Uses AI to detect and improve inconsistencies
+
+---
+
+## Stakeholders (who are designing for)
+
+- Product Designers → writing interface copy
+- Product Managers → defining flows and messages
+- Content Team → maintaining voice consistency
+-  Localization Teams → translating content at scale
+
+# Approach
+
+## 1. Tone Framework Definition
+
+I defined 4 core tone principles:
+
+- **Clear** → Easy to understand, no jargon  
+- **Reassuring** → Affirmative, reduces user doubts or confusions  
+- **Concise** → Avoids unnecessary words  
+- **Human** → Conversational but not overly casual  
+
+Each principle is applied consistently across all product surfaces and includes:
+
+- good vs bad examples
+- edge cases
+- usage guidelines
+
+---
+
+## 2. System Design
+
+I designed a reusable evaluation structure:
+
+Each piece of content is assessed on:
+
+- Clarity
+- Emotional tone
+- Length
+- Actionability
+  
+---
+
+## 3. AI-Powered Checker
+
+I created a prompt-based system that:
 
 ### Input:
 - UI text  
@@ -81,7 +104,7 @@ Each principle is applied consistently across all product surfaces.
 
 ---
 
-## Example
+### Example
 
 **Input:**
 Your request has not been processed due to an unexpected error.
@@ -94,6 +117,73 @@ Your request has not been processed due to an unexpected error.
 - Suggested rewrite:
 Something went wrong. Please try again.
 
+---
+
+## Testing
+
+I tested the system on:
+
+- onboarding messages
+- error states
+- transactional notifications
+
+Findings:
+
+- Improved clarity across all cases
+- Reduced verbosity
+- More consistent tone across flows
+
+---
+
+## Iteration
+
+Key improvements:
+
+- Added context-aware prompting
+- Refined tone scoring criteria
+- Introduced edge-case handling (legal, safety messages)
+
+---
+
+## Impact
+
+This system enables:
+
+- **Faster content creation**__ → teams don’t wait for reviews
+- **Consistent voice**__ → across features and teams
+- **Scalability**__ → usable across multiple products and languages
+
+Potential business impact:
+
+- Reduced user confusion
+- Increased trust
+- Fewer support tickets
+
+---
+
+## Scalability
+
+This system can be extended to:
+
+- Localization workflows  
+- Design tools (e.g. Figma plugins)  
+- Content QA pipelines  
+- Other content types (emails, notifications)  
+
+---
+
+## Final Solution
+
+A System that includes:
+
+1. **A structured tone framework**  
+2. **A reusable evaluation model**  
+3. **An AI-powered tone checker**
+
+Together, they enable teams to:
+- Self-evaluate Content  
+- Improve Clarity and Consistency  
+- Reduce Dependency on the Content team
 
 ---
 
@@ -102,39 +192,8 @@ Something went wrong. Please try again.
 1. Copy the prompt from `prompts.md`  
 2. Input your UI text and context  
 3. Review tone evaluation and suggestions  
-4. Apply improved version  
+4. Apply the improved version  
 5. Iterate if needed  
-
----
-
-## Where This Fits
-
-This system is designed for:
-
-- Product Designers writing UI copy  
-- Product Managers defining flows  
-- Content Designers maintaining voice  
-- Teams scaling across multiple features and markets  
-
----
-
-## Impact
-
-- Reduces dependency on manual content reviews  
-- Improves consistency across product surfaces  
-- Enables faster product iteration  
-- Supports scalable content practices  
-
----
-
-## Scalability
-
-This system can be extended to:
-
-- localization workflows  
-- design tools (e.g. Figma plugins)  
-- content QA pipelines  
-- other content types (emails, notifications)  
 
 ---
 
