@@ -57,9 +57,9 @@ Design a scalable system that:
 - Content Team → maintaining voice consistency
 -  Localization Teams → translating content at scale
 
-# Approach
+## Approach
 
-## 1. Tone Framework Definition
+### 1. Tone Framework Definition
 
 I defined 4 core tone principles:
 
@@ -76,7 +76,7 @@ Each principle is applied consistently across all product surfaces and includes:
 
 ---
 
-## 2. System Design
+### 2. System Design
 
 I designed a reusable evaluation structure:
 
@@ -89,7 +89,7 @@ Each piece of content is assessed on:
   
 ---
 
-## 3. AI-Powered Checker
+### 3. AI-Powered Checker
 
 I created a prompt-based system that:
 
